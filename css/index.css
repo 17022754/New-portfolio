@@ -1,0 +1,197 @@
+/*Fonts*/
+@font-face {
+    font-family: Gilroy;
+    font-weight: regular;
+    src: url("fonts/Gilroy/Gilroy-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: SemiBold;
+    src: url("fonts/Gilroy/Gilroy-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: bold;
+    src: url("fonts/Gilroy/Gilroy-bold.otf") format("opentype");
+}
+
+/*Basis stijl van de website*/
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*Stijl van de hele website*/
+html, body{
+  font-family: 'Gilroy';
+  color: rgba(253, 252, 250, 1);
+  background: rgba(37, 37, 37, 1);
+}
+
+/*Font groottes*/
+h1{
+  font-weight: bold;
+  font-size: 6.25rem; /*100px*/
+}
+
+h2{
+  font-weight: SemiBold;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-size: 1.875rem; /*30px*/
+}
+
+h3{
+  font-weight: SemiBold;
+  font-size: 1.5rem; /*24px*/
+}
+
+p, li, a{
+  font-weight: regular;
+  font-size: 1.5rem; /*24px*/
+}
+
+.text-p{
+  max-width: 580px;
+}
+
+/*achtergrond afbeelding*/
+.header{
+  background-image: url("../images/index/header.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1000px;
+}
+
+/*Opmaak navigatie*/
+.navigatie {
+  display: flex;
+  list-style-type: none;
+  padding: 1rem;
+  float: right;
+}
+
+.navigatie-li {
+  padding: 1rem;
+}
+
+/*Opmaak welkomstekst*/
+.header-tekst{
+  position: absolute;
+  top: 500px;
+  left: 200px;
+}
+
+.header-padding{
+  padding-top: 1rem;
+}
+
+.header-padding-big{
+  padding-top: 2rem;
+}
+
+/*divider onderwerpen*/
+.text-divider {
+  margin: 100px 50px;
+  --text-divider-gap: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.text-divider::before, .text-divider::after {
+  content: '';
+  height: 3px;
+  background-color: silver;
+  flex-grow: 1;
+}
+
+.text-divider::before {
+  margin-right: var(--text-divider-gap);
+}
+
+.text-divider::after {
+  margin-left: var(--text-divider-gap);
+}
+
+
+/*Dit is opmaak voor de afbeeldingen van de projecten op de homepagina*/
+.container{
+  position: relative;
+  width: 30%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  height: auto;
+  width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/*Sectie projecten: lay-out*/
+.images{
+  margin-left: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 65px;
+}
+
+.image{
+  max-width: 700px;
+}
+
+/*Sectie favorieten: lay-out*/
+.favorites{
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  gap: 350px;
+}
+
+.section-1{
+  padding: 1rem 0;
+}
+
+/*sectie contact: tekst*/
+.contact-text, .footer-text{
+  text-align: center;
+}
+
+/*sectie footer: copyright*/
+.footer-text{
+  font-size: 0.75rem;
+  padding: 1rem;
+}
