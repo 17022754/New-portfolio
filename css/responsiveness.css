@@ -1,0 +1,68 @@
+/*iPad*/
+@media only screen and (min-width: 760px){
+	/*divider onderwerpen*/
+	.text-divider {
+	  margin: 100px 50px;
+	  --text-divider-gap: 1rem;
+	  display: flex;
+	  align-items: center;
+	}
+
+	.text-divider::before, .text-divider::after {
+	  content: '';
+	  height: 3px;
+	  background-color: silver;
+	  flex-grow: 1;
+	}
+
+	.text-divider::before {
+	  margin-right: var(--text-divider-gap);
+	}
+
+	.text-divider::after {
+	  margin-left: var(--text-divider-gap);
+	}
+}
+
+
+/*desktop*/
+@media only screen and (min-width: 860px){
+/*opmaak afbeelding desktop*/
+	.header{
+	  background-image: url("../images/index/header.png");
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  background-size: cover;
+	  height: 1000px;
+	}
+
+/*Opmaak tekst*/
+	.header-tekst{
+  		position: absolute;
+  		top: 30%;
+ 		left: 10%;
+	}
+
+/*Sectie favorieten: lay-out*/
+	.favorites{
+	  gap: 350px;
+	}
+
+/*Sectie projecten: lay-out*/
+	.container{
+  		width: 30%;
+	}
+
+	.images{
+	  margin-left: 50px;
+	  display: flex;
+	  justify-content: flex-start;
+	  gap: 65px;
+	}
+
+	.image{
+  		max-width: 700px;
+	}
+
+
+}
