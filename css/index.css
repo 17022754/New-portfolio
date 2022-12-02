@@ -107,15 +107,15 @@ p, li, a, .title{
 
 .text-divider{
   text-align: center;
-  padding-top: 3rem;
+  padding: 3rem 0;
   margin: auto;
 }
 
 /*Dit is opmaak voor de afbeeldingen van de projecten op de homepagina*/
 .container{
   position: relative;
-  width: 80%;
-  padding: 2rem 0;
+  width: 90%;
+  padding-bottom: 2rem;
 }
 
 .image {
@@ -166,7 +166,7 @@ p, li, a, .title{
 /*Sectie favorieten: lay-out*/
 .favorites{
   display: flex;
-  padding: 0.5rem;
+  padding: 0 0.5rem 0.5rem 0.5rem;
   justify-content: space-between;
   align-content: center;
 }
@@ -182,7 +182,7 @@ p, li, a, .title{
 
 .contact-text{
   font-size: 1.7rem;
-  padding: 2rem 0;
+  padding-bottom: 3rem;
 }
 
 /*sectie footer: copyright*/
