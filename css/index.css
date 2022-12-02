@@ -2,19 +2,19 @@
 @font-face {
     font-family: Gilroy;
     font-weight: regular;
-    src: url("fonts/Gilroy/Gilroy-Regular.otf") format("opentype");
+    src: url("../fonts/Gilroy/Gilroy-Regular.otf") format("opentype");
 }
 
 @font-face {
     font-family: Gilroy;
     font-weight: SemiBold;
-    src: url("fonts/Gilroy/Gilroy-SemiBold.otf") format("opentype");
+    src: url("../fonts/Gilroy/Gilroy-SemiBold.otf") format("opentype");
 }
 
 @font-face {
     font-family: Gilroy;
     font-weight: bold;
-    src: url("fonts/Gilroy/Gilroy-bold.otf") format("opentype");
+    src: url("../fonts/Gilroy/Gilroy-bold.otf") format("opentype");
 }
 
 /*Basis stijl van de website*/
@@ -72,11 +72,12 @@ p, li, a, .title{
   display: flex;
   list-style-type: none;
   padding: 1rem;
-  float: right;
+  justify-content: center;
 }
 
 .navigatie-li {
-  padding: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 
 /*Opmaak welkomstekst*/
@@ -155,7 +156,7 @@ p, li, a, .title{
 .favorites{
   display: flex;
   justify-content: center;
-  align-content: space-between;
+  align-content: center;
   gap: 30px;
 }
 

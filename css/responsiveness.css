@@ -22,6 +22,10 @@
 	.text-divider::after {
 	  margin-left: var(--text-divider-gap);
 	}
+
+	.navigatie{
+		 float: right;
+	}
 }
 
 
