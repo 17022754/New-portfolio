@@ -1,19 +1,19 @@
 /*Fonts*/
 @font-face {
     font-family: Gilroy;
-    font-weight: regular;
+    font-weight: 400;
     src: url("../fonts/Gilroy/Gilroy-Regular.otf") format("opentype");
 }
 
 @font-face {
     font-family: Gilroy;
-    font-weight: SemiBold;
+    font-weight: 600;
     src: url("../fonts/Gilroy/Gilroy-SemiBold.otf") format("opentype");
 }
 
 @font-face {
     font-family: Gilroy;
-    font-weight: bold;
+    font-weight: 700;
     src: url("../fonts/Gilroy/Gilroy-bold.otf") format("opentype");
 }
 
@@ -33,24 +33,24 @@ html, body{
 
 /*Font groottes*/
 h1{
-  font-weight: bold;
-  font-size: 6.25rem; /*100px*/
+  font-weight: 700;
+  font-size: 5rem; /*80px*/
 }
 
 h2{
-  font-weight: SemiBold;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   font-size: 1.875rem; /*30px*/
 }
 
 h3{
-  font-weight: SemiBold;
+  font-weight: 600;
   font-size: 1.5rem; /*24px*/
 }
 
 p, li, a, .title{
-  font-weight: regular;
+  font-weight: 400;
   font-size: 1.5rem; /*24px*/
 }
 
@@ -77,12 +77,12 @@ p, li, a, .title{
 
 .navigatie-li {
   padding: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.125rem; /*18px*/
 }
 
 /*Opmaak welkomstekst*/
 .header-tekst{
-  padding: 20rem 1rem 0 1rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .header-padding{
