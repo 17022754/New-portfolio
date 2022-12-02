@@ -72,12 +72,24 @@ p, li, a, .title{
   display: flex;
   list-style-type: none;
   padding: 1rem;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navigatie-li {
   padding: 0.5rem;
   font-size: 1.125rem; /*18px*/
+}
+
+.special-li {
+  background-color: #00B8C8; 
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 8px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 /*Opmaak welkomstekst*/
@@ -169,7 +181,7 @@ p, li, a, .title{
 }
 
 .contact-text{
-  font-size: 2rem;
+  font-size: 1.7rem;
   padding: 2rem 0;
 }
 
