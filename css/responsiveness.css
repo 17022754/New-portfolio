@@ -1,8 +1,39 @@
-/*iPad*/
-@media only screen and (min-width: 760px){
-	/*divider onderwerpen*/
+/*Phone: lay-out for bigger screens */
+@media only screen and (min-width: 500px){
+/*sectie: favorieten centreren*/
+	.favorites{
+		justify-content: center;
+		gap: 30%;
+	}
+/*sectie: navigatie float right*/
+	.navigatie{
+		float: right;
+	}
+
+	.navigatie-li{
+		padding: 1rem;
+	}
+
+	.special-li {
+		margin-left: 1rem;
+	}
+/*Sectie: header afbeelding centreren*/
+	.header{
+		height: 160vh;
+	}
+}
+
+/*Phone to iPad: tekst onder navigatie en divider met lijnen toevoegen*/
+@media only screen and (min-width: 669px){
+/*Sectie: zorgt dat de tekst onder de navigatie blijft*/
+	.header-tekst{
+		padding: 5rem 1rem 1rem 2rem;
+	}
+
+/*sectie: divider de lijnen*/
 	.text-divider {
-	  margin: 100px 50px;
+	  margin-left: 50px;
+	  margin-right: 50px;
 	  --text-divider-gap: 1rem;
 	  display: flex;
 	  align-items: center;
@@ -22,51 +53,37 @@
 	.text-divider::after {
 	  margin-left: var(--text-divider-gap);
 	}
-
-	.navigatie{
-		 float: right;
+/*Sectie: projecten naast elkaar zetten*/
+	.images {
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
+
+	.container{
+		width:50%;
+		padding: 1rem;
+	}
+/*Sectie: contact email vergroten*/
+	.contact-text{
+  		font-size: 3rem;
+  	}
 }
 
-
-/*desktop*/
+/*IPad to Desktop: grotere afbeelding toevoegen*/
 @media only screen and (min-width: 860px){
 /*opmaak afbeelding desktop*/
 	.header{
 	  background-image: url("../images/index/header.png");
-	  background-repeat: no-repeat;
 	  background-position: center center;
 	  background-size: cover;
-	  height: 1000px;
+	  height: 130vh;
 	}
-
-/*Opmaak tekst*/
+/*Sectie: welkomstekst positioneren*/
 	.header-tekst{
-  		position: absolute;
-  		top: 30%;
- 		left: 10%;
+		padding: 20rem 1rem 1rem 5rem;
 	}
-
-/*Sectie favorieten: lay-out*/
-	.favorites{
-	  gap: 350px;
-	}
-
-/*Sectie projecten: lay-out*/
-	.container{
-  		width: 30%;
-	}
-
-	.images{
-	  margin-left: 50px;
-	  display: flex;
-	  justify-content: flex-start;
-	  gap: 65px;
-	}
-
-	.image{
-  		max-width: 700px;
-	}
-
-
+/*Sectie: contact email vergroten*/
+	.contact-text{
+  		font-size: 5rem;
+  	}
 }

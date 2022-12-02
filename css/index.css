@@ -83,6 +83,7 @@ p, li, a, .title{
 
 .special-li {
   background-color: #00B8C8; 
+  font-size: 1.125rem; /*18px*/
   border: none;
   border-radius: 50px;
   color: white;
