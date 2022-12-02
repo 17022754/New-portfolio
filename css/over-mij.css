@@ -1,0 +1,53 @@
+.head-section{
+	padding-top: 7%;
+}
+
+.section-p{
+	max-width: 400px;
+	padding: 1rem;
+	margin: auto;
+}
+
+@media only screen and (min-width: 669px){
+	.section-p{
+		max-width: 700px;
+		padding: 1rem 0 1rem 5rem;
+		margin: 0;
+	}
+}
+
+@media only screen and (min-width: 1024px){
+	.section-p{
+		max-width: 700px;
+	}
+
+	a:hover img {
+		display: block;
+	}
+
+	.about-image {
+		width: 100%;
+		max-width: 500px;
+		height: auto;
+		position: absolute;
+		top: 20rem;
+		right: 5rem;
+	}
+}
+
+/*lay-out images when hover*/
+
+a img {
+	display: none;
+}
+
+.hover-image {
+	text-decoration: underline;
+}
+
+/*padding voor afstand tussen tekst en button*/
+.download {
+	margin-top: 2rem;
+	margin-left: 0;
+}
+
